@@ -2,7 +2,8 @@
 
 Bool_t rootlogon(void){
 
-	R__LOAD_LIBRARY ($PLUTOLIBDIR/libPluto.so);
+	//napis "hello" bedzie wyswietlany przy kazdym uruchomieniu ROOT-a
+	cout<<”hello”<<endl;
 
 	return kTRUE;
 }
