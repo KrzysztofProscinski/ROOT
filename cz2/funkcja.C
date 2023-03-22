@@ -1,6 +1,6 @@
 {
-   TF1 f1 ("f1","x*x",0.,10.);
-   f1.SetRange(-10.,10.);
+   TF1 f1 ("f1","x*x",0.,10.); // definicja funkcji f(x)=x^2
+   f1.SetRange(-10.,10.); // zakres funkcji
 
    Float_t war, cal, min;
 
@@ -16,7 +16,7 @@
    min=f1.GetMinimum(0.,5.);
    cout<<min<<endl;
 
-   f1.SetLineColor(2);
-   f1.SetLineStyle(9);
-   f1.Draw();
+   f1.SetLineColor(2); // ustawienie koloru linii na czerwony (2)
+   f1.SetLineStyle(9); // ustawienie stylu linii na linie przerywana (9)
+   f1.Draw(); // rysowanie funkcji
 }
